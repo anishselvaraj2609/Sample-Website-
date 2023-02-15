@@ -1,0 +1,224 @@
+
+
+<html lang="en">
+    <head>
+      <title>LOGIN</title>
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1">
+      <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+      <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+      <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+      <style>
+        img-hover-zoom {
+      height: 300px;
+      overflow: hidden;
+    }
+    
+    .img-hover-zoom img {
+      transition: transform .5s ease;
+    }
+    
+    
+    .img-hover-zoom:hover img {
+      transform: scale(1.1);
+    
+    
+    }
+    
+    
+      </style>
+      <script> 
+      $(document).ready(function() {
+    $('#myCarousel').carousel({
+    interval: 2000
+    })
+    
+    $('#myCarousel').on('slid.bs.carousel', function() {
+        //alert("slid");
+    });
+    
+    
+    });
+    
+    </script>
+    </head>
+    <body style="background-color: rgb(0, 0, 0); color: rgb(0, 0, 0)">
+      <div class="navbar">
+      <div>
+    <nav class="navbar navbar-inverse">
+      <div class="container-fluid">
+        <div class="navbar-header">
+          <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>                        
+          </button>
+          <a href="1st page.html">
+            <a href="1st page.html">
+              <a class="navbar-brand"  style="font-weight:900;font-variant: small-caps; color: orangered;" href="1st page.html">BeAsT 
+               
+              </a>
+        </div>
+        <div class="collapse navbar-collapse" id="myNavbar">
+          <ul class="nav navbar-nav">
+             <li class="dropdown"><a class="dropdown-toggle" data-toggle="dropdown" href="#">Duke <span class="caret"></span></a>
+              <ul class="dropdown-menu">
+                <li><a href="duke 125.html">Duke 125</a></li>
+                 <li><a href="duke 790.html">Duke 790</a></li>
+              </ul>
+            </li>
+            <li class="#"><a class="#" data-toggle="#" href="off road.html">Off Road  </a>
+              
+            </li>
+            <li class="#"><a class="#" data-toggle="#" href="classic.html">Classic</a>
+            </li>
+          </ul>
+        <form class="navbar-form navbar-right" action="/action_page.php">
+          <div class="input-group">
+            
+          </div>
+        </form>
+          </div>
+      </div>
+      </div>
+    
+    
+      
+    </nav>
+     </div>
+    </div>
+
+    <script>  
+        function validateform(){    
+        
+        
+          
+        var x=document.myform.email.value;  
+        var atposition=x.indexOf("@");  
+        var dotposition=x.lastIndexOf(".");
+    
+        var password=document.myform.password.value; 
+        
+        if (atposition<1 || dotposition<atposition+2 || dotposition+2>=x.length){  
+          alert("Please enter a valid e-mail address \n atpostion:"+atposition+"\n dotposition:"+dotposition);  
+          return false;  
+          }  
+        
+       if(password.length<6){  
+          alert("Password must be at least 6 characters long.");  
+          return false;  
+          }   
+        
+    
+        
+        }
+        
+        
+        </script>  
+
+  <!--forms-->
+
+  <div class="thumbnail">
+    <div class="demo-container" style="background-color: black;color: rgb(84, 73, 85);">
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-6 col-12 mx-auto">
+            <div class="text-center image-size-small position-relative">
+           
+            </div>
+            <center>
+            <div class="container">
+              <div class="p-5 bg-white rounded shadow-lg">
+                <h3 class="mb-2 text-center pt-5">LOGIN</h3>
+                <p class="text-center lead">Or<a href="sign up.html" class="text-dark font-weight-bold"> Create a New account</a>
+                  <form name="myform" method="post" onsubmit="return validateform()" >
+                        <hr>
+                        Email: <input type="text" name="email"><br/> <br> <br> 
+                        Password: <input type="password" name="password"><br/> <br> <br> <br>  
+                        <input  type="submit" formaction="1st page.html" value="continue">  
+                    </center>
+                            </div>
+                            </div>
+</div>
+</div>
+</div>
+</div>
+
+
+
+    <!--footer-->
+
+</div><br><br><br><div></div>
+<footer class="bd-footer py-5 mt-5 bg-dark" style="font-variant: small-caps;background-color: rgb(0, 0, 0);color: gray;">
+  <div class="container py-5">
+  <div class="footer-cta pt-7 pb-7">  
+      <div class="row">  
+          <div class="col-xl-4 col-md-4 mb-30">  
+              <div class="single-cta">  
+                  <div class="cta-text">  
+                      <h4> Find us </h4> 
+                      <p><a href="#"><span class="glyphicon glyphicon-map-marker"></a> 190 Annur Road , Coimmbatore , TamilNadu , 64301 <span></p>
+                          
+                  </div>  
+              </div>  
+          </div>  
+          <div class="col-xl-4 col-md-4 mb-30">  
+              <div class="single-cta">  
+                  <i class="fas fa-phone"> </i>  
+                  <div class="cta-text">  
+                      <h4> Call us </h4>  
+                      <p><span class="glyphicon glyphicon-earphone"> 88845 10000<span></p> 
+                  </div>  
+              </div>  
+          </div>  
+            
+      
+           
+           <div class="col-xl-4 col-md-4 mb-30">  
+           <div class="single-cta">  
+              <div class="footer-widget">  
+                  <div class="footer-widget-heading">  
+                      <h3><span class="glyphicon glyphicon-tower"><span>SHOWROOM AT </span></h3>  
+                  </div>  
+                  <ul>  
+                      <li> COIMBATORE</li>  
+                      <li> CHENAI </li>  
+                      <li> MADURAI </li>  
+                      <li> METTUPALAYAM </li>  
+                      <li> SALEM</li>  
+                      <li> ERODE </li>  
+                      <li> OOTY </li>  
+                        
+                     </ul>  
+                </div>  
+            </div>  
+          </div>  
+             
+          </div> 
+        </div>   
+      </div>  
+  </div>  
+</div>  
+<div class="copyright-area">  
+  <div class="container">  
+      <div class="row">  
+          <div class="col-xl-19 col-lg-19 text-center">  
+              <div class="copyright-text">  
+                  <p> Copyright © 2021, All Right Reserved </p>  
+              </div>  
+          </div>  
+          </div>  
+      </div>  
+  </div>  
+</div>  
+</footer>
+  </div>
+  
+  <!--footer-->
+          
+
+
+ 
+
+</body>
+</html>

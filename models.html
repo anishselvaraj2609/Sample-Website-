@@ -1,0 +1,343 @@
+<html lang="en">
+<head>
+  <title> admin users</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+
+<style>
+
+@import "https://fonts.googleapis.com/css?family=Poppins:300,400,500,600,700";
+body {
+    font-variant: small-caps;
+  background: #1a1919;
+}
+
+p {
+  font-family: 'Poppins', sans-serif;
+  font-size: 1.1em;
+  font-weight: 300;
+  line-height: 1.7em;
+  color: #999;
+}
+
+a,
+a:hover,
+a:focus {
+  text-decoration: none;
+  transition: all 0.3s;
+}
+
+.navbar {
+  padding: 15px 10px;
+  background: #fff;
+  border: none;
+  border-radius: 0;
+  margin-bottom: 40px;
+  box-shadow: 1px 1px 3px rgba(0, 0, 0, 0.1);
+}
+
+.navbar-btn {
+  box-shadow: none;
+  outline: none !important;
+  border: none;
+  background: black;
+  color: white;
+}
+
+.line {
+  width: 100%;
+  height: 1px;
+  border-bottom: 1px dashed #ddd;
+  margin: 40px 0;
+}
+
+
+.wrapper {
+  display: flex;
+  align-items: stretch;
+}
+
+#sidebar {
+  min-width: 250px;
+  max-width: 250px;
+  background: #000000;
+  color: #fff;
+  transition: all 0.3s;
+}
+
+#sidebar a,
+#sidebar a:hover,
+#sidebar a:focus {
+  color: inherit;
+}
+
+#sidebar.active {
+  margin-left: -250px;
+}
+
+#sidebar .sidebar-header {
+  padding: 20px;
+  background: orangered;
+}
+
+#sidebar ul.components {
+  padding: 20px 0;
+  border-bottom: 1px solid #060707;
+}
+
+#sidebar ul p {
+  color: #fff;
+  padding: 10px;
+}
+
+#sidebar ul li a {
+  padding: 10px;
+  font-size: 1.1em;
+  display: block;
+}
+
+#sidebar ul li a:hover {
+  color: #000000;
+  background: #fff;
+}
+
+#sidebar ul li.active > a,
+a[aria-expanded="true"] {
+  color: rgb(255, 251, 251);
+  background: #3a3636;
+}
+
+a[data-toggle="collapse"] {
+  position: relative;
+}
+
+a[aria-expanded="false"]::before,
+a[aria-expanded="true"]::before {
+  content: '\e259';
+  display: block;
+  position: absolute;
+  right: 20px;
+  font-family: 'Glyphicons Halflings';
+  font-size: 0.6em;
+}
+
+a[aria-expanded="true"]::before {
+  content: '\e260';
+}
+
+ul ul a {
+  font-size: 0.9em !important;
+  padding-left: 20px !important;
+  background: #030303;
+  color: white;
+}
+
+ul.CTAs {
+  padding: 20px;
+}
+
+ul.CTAs a {
+  text-align: center;
+  font-size: 0.9em !important;
+  display: block;
+  border-radius: 5px;
+ 
+}
+
+a.download {
+  background: #fff;
+  color: #0b0c0e;
+}
+
+a.article,
+a.article:hover {
+  background: #c54263 !important;
+  color: rgb(216, 202, 210) !important;
+}
+
+
+#content {
+  padding: 20px;
+  min-height: 100vh;
+  transition: all 0.3s;
+}
+
+#content p a {
+  color:black
+}
+
+
+@media (max-width: 768px) {
+  #sidebar {
+    margin-left: -250px;
+  }
+  #sidebar.active {
+    margin-left: 0;
+  }
+  #sidebarCollapse span {
+    display: none;
+  }
+}
+
+</style>
+</head>
+<body style="background-color:rgb(0, 0, 0);font-variant: small-caps; color: rgb(255, 255, 255);">
+
+     
+
+  <script>
+
+$(function () {
+  $('[data-toggle="tooltip"]').tooltip()
+})
+
+$(document).ready(function() {
+  $("#sidebarCollapse").on("click", function() {
+    $("#sidebar").toggleClass("active");
+    $(this).toggleClass("active");
+  });
+});
+  </script>
+
+
+
+
+
+
+  <div class="wrapper">
+  
+    <nav id="sidebar">
+      <div class="sidebar-header" >
+        <h3>Admin View</h3>
+        
+      </div>
+  
+      <ul class="list-unstyled components">
+        <li >
+            <a href="Admin.html"><p><span class="glyphicon glyphicon-king"></span> Dashboard</p></a>
+        </li>
+        <li >
+          <a href="Products.html"><span class="glyphicon glyphicon-king"></span> Products </span></a>
+        </li>
+        <li>
+          <a href="#"><span class="glyphicon glyphicon-king"></span>About</a>
+       
+        </li>
+
+     
+                
+             <ul class="list-unstyled CTAs">
+                <li><a href="1st page.html" class="article">Home</a></li>
+              </ul>
+        </ul>
+    </nav>
+  
+   
+    <div id="content">
+            <button type="text" id="sidebarCollapse" class="btn btn-info navbar-btn" style="font-variant: small-caps;background-color: black;color: white;">
+                <a class="navbar-brand"  style="font-weight:900;font-variant: small-caps; color: orangered;" href="#">BeAsT</a>
+
+                              </button>
+        <div class="container-fluid">
+      <h2>Progress</h2></div>
+      
+        <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+          <div class="modal-dialog" role="document">
+            <div class="modal-content">
+              <div class="modal-header">
+                <h5 class="modal-title" id="exampleModalLabel">Modal title</h5>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+          </button>
+              </div>
+              <div class="modal-body">
+                ...
+              </div>
+              <div class="modal-footer">
+                <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                <button type="button" class="btn btn-success">Save</button>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="carousel-inner" >
+            <div class="item active">
+              <a href="#"><img src="1 classic.jpg"  alt="duke 125" style="width:100%;"></a>
+              <div class="carousel-caption">
+                <b><h1></h1></b>
+               
+                    <a class="left carousel-control" href="#myCarousel" data-slide="prev"></a>
+        
+                      <a class="right carousel-control" href="#myCarousel" data-slide="next"></a>
+              </div>
+            </div>
+        
+           
+        
+            <div class="item">
+              <img src="2 classic.jpg" alt="duke 390" style="width:100%;">
+              <div class="carousel-caption">
+               <b> <h1></h1></b>
+        
+              </div>
+            </div>
+        
+            <div class="item">
+              <img src="3 classic.jpg" alt="duke 390" style="width:100%;"> 
+              <div class="carousel-caption">
+               <b> <h1></h1></b>
+           
+              </div>
+            </div>
+             <div class="item">
+              <img src="4 offroad.jpg" alt="duke 390" style="width:100%;"> 
+              <div class="carousel-caption">
+               <b> <h1></h1></b>
+           
+              </div>
+            </div>
+            <div class="item">
+                <img src="5 classic.jpg" alt="duke 390" style="width:100%;">
+                <div class="carousel-caption">
+                 <b> <h1></h1></b>
+          
+                </div>
+              </div>
+              <div class="item">
+                <img src="6 classic.jpg" alt="duke 390" style="width:100%;">
+                <div class="carousel-caption">
+                 <b> <h1></h1></b>
+          
+                </div>
+              </div>
+              <div class="item">
+                <img src="7 classic.jpg" alt="duke 390" style="width:100%;">
+                <div class="carousel-caption">
+                 <b> <h1></h1></b>
+          
+                </div>
+              </div>
+              <div class="item">
+                <img src="8 classic" alt="duke 390" style="width:100%;">
+                <div class="carousel-caption">
+                 <b> <h1></h1></b>
+          
+                </div>
+              </div>
+              <div class="item">
+                <img src="9 classic.jpg" alt="duke 390" style="width:100%;">
+                <div class="carousel-caption">
+                 <b> <h1></h1></b>
+          
+                </div>
+              </div>
+              
+              
+              
+        
+          </div>
+          </div>
+        </html>>
